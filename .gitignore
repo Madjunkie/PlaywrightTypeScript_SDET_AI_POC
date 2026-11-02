@@ -1,17 +1,35 @@
 
-# Playwright
+# =============================================================================
+# .gitignore — Files and directories excluded from Git tracking
+# =============================================================================
+
+#  Dependencies 
 node_modules/
+
+# Environment & secrets 
+.env
+
+#  Playwright test artifacts 
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
 
-# Environment variables
-.env
-
-# Generated test reports
+#  Reports 
 /reports/
-/custom-report/
 /allure-results/
 /allure-report/
+/custom-report/
+
+#  Tool / IDE config (local caches, not project files) 
+.claude/
+.commandcode/
+.playwright-cli/
+.playwright-mcp/
+.playwright/
+.vscode/
+
+#  Others
+/prompts/
+/docs/

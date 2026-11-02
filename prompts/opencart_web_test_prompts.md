@@ -1,6 +1,6 @@
 # OpenCart Frontend Store – Web Test Scenarios
 
-**Application URL:** `http://localhost/opencart/upload/`
+**Application URL:** `https://naveenautomationlabs.com/opencart/`
 
 Implement these scenarios following the framework conventions defined in `playwright-mcp-context.md`.
 

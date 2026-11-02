@@ -6,7 +6,20 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:web": "playwright test tests/web --project=chromium --headed",
+    "test:web:master": "playwright test tests/web --project=chromium --headed --grep @master",
+    "test:web:sanity": "playwright test tests/web --project=chromium --headed --grep @sanity",
+    "test:web:regression": "playwright test tests/web --project=chromium --headed --grep @regression",
+    "test:web:datadriven": "playwright test tests/web --project=chromium --headed --grep @datadriven",
+    "test:web:e2e": "playwright test tests/web --project=chromium --headed --grep @end-to-end",
+    "test:api": "playwright test tests/api --project=chromium",
+    "test:api:master": "playwright test tests/api --project=chromium --grep @master",
+    "test:api:sanity": "playwright test tests/api --project=chromium --grep @sanity",
+    "test:api:regression": "playwright test tests/api --project=chromium --grep @regression",
+    "test:api:e2e": "playwright test tests/api --project=chromium --grep @end-to-end"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
